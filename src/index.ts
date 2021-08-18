@@ -1,5 +1,5 @@
-const {clientCode} = require('./PatternsClientCode.ts');
+const {clientCode} = require('./Patterns/PatternsClientCode.ts');
 
-clientCode.singleton();
+clientCode.observer();
 
 

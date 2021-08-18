@@ -1,9 +1,10 @@
-// import {observerClientCode} from "./Observer/index.observer";
-const observerClientCode = require('./Observer/index.observer.ts');
+import {PatternsClientCodeType} from "./PatternsClientCode.types";
+
+const observerClientCode = require('./Observer/Observer.ts');
 const singletonClientCode = require('./Singleton/index.singleton');
 
 
-class PatternsClientCode {
+class PatternsClientCode implements PatternsClientCodeType{
     observer(){
         observerClientCode()
     }
@@ -16,3 +17,4 @@ class PatternsClientCode {
 export const clientCode = new PatternsClientCode();
 
 module.exports = {clientCode: new PatternsClientCode()};
+

@@ -1,7 +1,7 @@
 import {PatternsClientCodeType} from "./PatternsClientCode.types";
 
 const observerClientCode = require('./Observer/Observer.ts');
-const singletonClientCode = require('./Singleton/index.singleton');
+const singletonClientCode = require('./Singleton/Singleton');
 
 
 class PatternsClientCode implements PatternsClientCodeType{
